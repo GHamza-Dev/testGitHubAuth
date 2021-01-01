@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login with github</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <button class="log">Login with GitHub</button>
+        <form action="" class="form">
+            <label for="name">Username</label>
+            <input type="text" name="username" id="name">
+            <label for="pass">Password</label>
+            <input type="password" name="password" id="pass">
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+
+
+    <script>
+        const btn = document.querySelector('.log');
+        btn.addEventListener('click', () => {
+            document.querySelector('.form').classList.add('show_form');
+            btn.style.display = 'none';
+        });
+    </script>
+</body>
+
+</html>
